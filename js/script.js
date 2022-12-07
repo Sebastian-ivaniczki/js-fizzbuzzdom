@@ -11,25 +11,36 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto 
 // 5 ed al posto dei multipli di 3 è 5 aggiungo la parola "FIZZBUZZ"
 
 
-//1 
+
+
+
 
 for(let i = 1; i <= 100; i++){
     //console.log(i)
     let number;
     
+    const cont = document.getElementById("cont")
 
+    const element = document.createElement("div")
+    
+    cont.append(element)
+
+    element.classList.add("target")
     
     if((i % 3 === 0) && (i % 5 === 0)){
         number = 'FIZZBUZZ';
+        element.classList.add("multiple-5-3")
     }else if(i % 5 === 0){ 
         number = 'BUZZ'
-    
+        element.classList.add("multiple-5")
+        
     }else if(i % 3 === 0){
         number = 'FIZZ'
-    
+        element.classList.add("multiple-3")
     }else{
         number = i
     }
     
     console.log(number)
+
 };
