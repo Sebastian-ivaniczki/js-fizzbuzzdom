@@ -4,6 +4,9 @@ div{
     background-color: blue;
     margin-right:2rem ;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .multiple-5-3{
