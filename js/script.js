@@ -14,16 +14,16 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto 
 
 
 
+const cont = document.getElementById("cont")
 
 for(let i = 1; i <= 100; i++){
     //console.log(i)
     let number;
     
-    const cont = document.getElementById("cont")
 
     const element = document.createElement("div")
-    
     cont.append(element)
+    
 
     element.classList.add("target")
     
