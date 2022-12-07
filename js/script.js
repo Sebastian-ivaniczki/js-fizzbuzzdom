@@ -8,7 +8,7 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto 
 // 2 creo una variablile per targhetizzare i e poterla sostituire con le stringhe
 // 3 creo un processo di verifica per i numeri multipli di 3 e li sostituisco con la parola "FIZZ"
 // 3 Faccio la stessa cosa per i multipli di 5 ma come parola uso "BUZZ"
-// 4 stampo il risultato in console
+// 5 ed al posto dei multipli di 3 è 5 aggiungo la parola "FIZZBUZZ"
 
 
 //1 
@@ -16,13 +16,16 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto 
 for(let i = 1; i <= 100; i++){
     //console.log(i)
     let number;
-    //2 
+    
 
     
-    if(i % 3 === 0){
-        number = 'FIZZ';
+    if((i % 3 === 0) && (i % 5 === 0)){
+        number = 'FIZZBUZZ';
     }else if(i % 5 === 0){ 
         number = 'BUZZ'
+    
+    }else if(i % 3 === 0){
+        number = 'FIZZ'
     
     }else{
         number = i
